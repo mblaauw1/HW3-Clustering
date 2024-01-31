@@ -14,7 +14,9 @@ class Silhouette:
         silhouette_scores = np.zeros(X.shape[0])
 
         for i in range(X.shape[0]):
+            #make number of observations in the cluster -1
             a_o = np.zeros(self.k)
+            #make number of observations in the next closest cluster -1
             b_o = np.zeros(self.k)
 
             # Calculate a_o for each cluster
